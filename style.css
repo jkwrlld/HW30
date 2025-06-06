@@ -1,0 +1,39 @@
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: limegreen;
+  position: relative;
+  animation-name: animdiv;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes animdiv {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    top: 0;
+    left: 350px;
+    background-color: yellow;
+  }
+  50% {
+    top: 350px;
+    left: 350px;
+    background-color: green;
+  }
+  75% {
+    top: 350px;
+    left: 0;
+    background-color: blue;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+}
